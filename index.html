@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GoPocket - Smart Family Travel Budget Planner with Live REST APIs, React Router, Redux Toolkit, Multi-Currency, Split Bill & Packing Checklist." />
+  <title>GoPocket - Smart Family Travel Budget Planner</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- React 18 & ReactDOM -->
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+
+  <!-- History & React Router DOM UMD with Global Bridge -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/history/5.3.0/history.production.min.js"></script>
+  <script>
+    // Ensure HistoryLibrary is mapped globally for React Router UMD
+    if (typeof window !== 'undefined') {
+      window.HistoryLibrary = window.HistoryLibrary || window.history || window.History;
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/6.14.2/react-router.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/6.14.2/react-router-dom.production.min.js"></script>
+
+  <!-- Redux & Redux Toolkit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/8.1.3/react-redux.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@reduxjs/toolkit@1.9.7/dist/redux-toolkit.umd.min.js"></script>
+
+  <!-- Chart.js & Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Babel for inline JSX compilation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.6/babel.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React & Redux Application Script -->
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
